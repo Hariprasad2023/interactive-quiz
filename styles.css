@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.quiz-container {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    color: #2d3436;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.question {
+    font-size: 1.2rem;
+    color: #2d3436;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.options {
+    list-style: none;
+}
+
+.option {
+    background: #f8f9fa;
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.option:hover {
+    background: #e9ecef;
+    transform: translateX(5px);
+}
+
+.option.selected {
+    background: #667eea;
+    color: white;
+    border-color: #667eea;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background: #667eea;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.submit-btn:hover {
+    background: #764ba2;
+}
+
+.progress-bar {
+    height: 5px;
+    background: #e9ecef;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: #667eea;
+    transition: width 0.3s ease;
+}
+
+#result {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.correct {
+    background: #d4edda;
+    color: #155724;
+}
+
+.incorrect {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+#timer {
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+    margin: 10px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
